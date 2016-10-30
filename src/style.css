@@ -1,0 +1,114 @@
+body {
+	font-family: tahoma, sans-serif;
+	background-image: url('../resources/bg.png');
+}
+
+p, li {
+	line-height: 1.6;
+}
+
+.intro {
+	padding: 20px 50px;
+	    color: white;
+}
+.intro h1{
+	font-size: 40px;
+	margin-bottom: 0;
+
+}
+.intro h2{
+	margin-bottom: 20px;
+	margin-left: 10px;
+
+}
+
+.intro a{
+	color: white;
+		text-decoration: none;
+		font-weight: bold;
+}
+	.summary {
+		float: left;
+		width: 400px;
+		padding: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		/* transparent box */
+		background-color: rgba(75, 75, 75, 0.4);
+	}
+
+
+.sidebar {
+/* makes padding included in full width */
+	box-sizing: border-box;
+	float: left;
+	width: 20%;
+	color: white;
+	padding: 30px;
+	font-family: tahoma, sans-serif;
+}
+.sidebar a{
+	font-weight: bold;
+		color: #d4d4d6;
+		text-decoration: none;
+}
+
+.main {
+	float: right;
+	width: 80%;
+	background: white;
+	padding: 30px;
+	box-sizing: border-box;
+	/* list of fonts for browser in case it doesnt have the first one*/
+		font-family: tahoma, sans-serif;
+}
+
+	.main h3 {
+		color: black;
+	}
+
+	.main p {
+		color: gray;
+	}
+	.main a{
+		color: grey;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+
+
+
+footer{
+	/* will fall back on last font */
+		font-family: tahoma, sans-serif;
+		background-image: url('../resources/bg.png');
+		text-align: center;
+		padding: 20px;
+}
+
+footer a {
+	background: white;
+	color: black;
+	width: 200px;
+	padding: 10px 0;
+	border-radius: 35px;
+	/* makes blocks side by side
+	without floating them like in bootstrap*/
+	display: inline-block;
+	text-align: center;
+	margin-right: 7px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+footer a:hover {
+	background: black;
+}
+/* changes display to mobile or desktop view depending on screen size*/
+@media screen and (max-width: 1100px) {
+	.main, .sidebar,footer {
+		width: 100%;
+	}
+
+}
